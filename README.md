@@ -10,7 +10,7 @@ This repo shows a demo of a *binary* Merkle tree.
 WIP
 
 ## Useful links
-[Ethereum whitepaper](https://ethereum.org/en/whitepaper/)
-[Merkling in ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
-[Blockchain demo](https://andersbrownworth.com/blockchain/blockchain)
-[Solidity bootcamp](https://www.youtube.com/watch?v=M576WGiDBdQ)
+1. [Ethereum whitepaper](https://ethereum.org/en/whitepaper/)
+2. [Merkling in ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
+3. [Blockchain demo](https://andersbrownworth.com/blockchain/blockchain)
+4. [Solidity bootcamp](https://www.youtube.com/watch?v=M576WGiDBdQ)
