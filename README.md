@@ -1,4 +1,4 @@
-# MerkleTree_MelloMM
+# BinaryMerkleTree_MelloMM
 Python3 implementation of a *binary* Merkle trees provided by MelloMM.
 
 MelloMM set of repos targets the technicals of blockchain, especially Ethereum-based blockchains.
