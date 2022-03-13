@@ -10,8 +10,11 @@ This repo shows a demo of a *binary* Merkle tree. These are simple, but they are
 Merkle trees are wodely used to verify any kind of data which are transferred or archived through the use of cryptographic hashes. Briefly, "verifying" means assuring that a certain data block has not been tampered/it really comes from who claims to be the sender of it. Variants of Merkle trees are used in peer-to-peer networks such as Ethereum or Bitcoin.
 
 Merkle tree composition:
-*. Leaves are 
-*. Non-leaves 
+* Leaves contains actual data.
+* Intermediate nodes (named _inodes_) contains the cryptographic hash of its two children.
+* A single root node, the top of the tree, that has the same property of an inode.
+
+The point is being able to demonstrate that a child node is really part of a certain Merkle tree. This is computational expensive because you should compute the hash of all its ancestors, which in `O` notation is `O(L)`, where `L` is the number of leaves in the tree.
 
 Any block of the blockchain is actually stored in a Merkle tree.
 
