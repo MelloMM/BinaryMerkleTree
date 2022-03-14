@@ -27,6 +27,9 @@ Let's imagine to tamper a transaction:
 4. the hash of the Merkle tree root changes;
 5. the hash of the block is the hash of the Merkle tree: if such hash changes, the proof-of-work for the block will fail.
 
+The upward propagation of the hash guarantees the integrity of a block and it is the reason for which tampering a blockchain transaction has an almost null probability to be successful.
+
+The distributed nature of the blockchain allows a node of a blockchain (a peer) to download the header of a block from a source, the tree (or a portion of the tree, from the transaction to the root) from another source and still verifying the integrity of the transaction.
 
 ## Useful links
 1. [Ethereum whitepaper](https://ethereum.org/en/whitepaper/)
