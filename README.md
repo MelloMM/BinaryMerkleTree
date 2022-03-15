@@ -7,7 +7,15 @@ MelloMM set of repos targets the technicals of blockchain, especially Ethereum-b
 This repo shows a demo of a *binary* Merkle tree. These are simple, but they are not the trees used in Ethereum, which uses indeed [Merkle Patricia trees](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/). This repo shows a demo of binary trees, whereas the MelloMM's demo of Patricia trees can be found [here (ToDo)]().
 
 ### Structure
-ToDo
+**main.py:**
+* a block with 4 transactions is taken as input
+* the merkle tree of the block is computed from the block
+* consistency of the tree is verified
+* a single transaction is verified
+* the subtree of a single transaction is retrieved
+* a single transaction is verified with a subtree
+* a single transaction is tampered
+* the consistency of the tree is verified again, failing
 
 ### Exposed APIs
 ToDo
