@@ -6,6 +6,18 @@ MelloMM set of repos targets the technicals of blockchain, especially Ethereum-b
 ## Content
 This repo shows a demo of a *binary* Merkle tree. These are simple, but they are not the trees used in Ethereum, which uses indeed [Merkle Patricia trees](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/). This repo shows a demo of binary trees, whereas the MelloMM's demo of Patricia trees can be found [here (ToDo)]().
 
+### Structure
+ToDo
+
+### Exposed APIs
+ToDo
+
+### Attention
+* This is a pedagogical example and not, probably, the most efficient implementation.
+* A real proof-of-work is not computed: here, values `nonce`, `timestamp` and `previous hash` of a block are basically random.
+* A block can contain up to thousands of transaction, but in this example only 4 transactions will be present.
+* Syntax of a transaction of a block (i.e., class `transaction`) does not respect the syntax of a real Eth transaction, it's pedagogical.
+
 ## Short theory
 Merkle trees are wodely used to verify any kind of data which are transferred or archived through the use of cryptographic hashes. Briefly, "verifying" means assuring that a certain data block has not been tampered/it really comes from who claims to be the sender of it. Variants of Merkle trees are mainly used in Ethereum, Bitcoin or in any other blockchain peer-to-peer network.
 
