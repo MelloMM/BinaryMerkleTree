@@ -25,7 +25,7 @@ Let's imagine to tamper a transaction:
 2. the hash of the parent inode changes;
 3. the hash of each inode changes as well;
 4. the hash of the Merkle tree root changes;
-5. the hash of the block is the hash of the Merkle tree: if such hash changes, the proof-of-work for the block will fail.
+5. the hash of the block changes, the proof-of-work for the block will fail.
 
 The upward propagation of the hash guarantees the integrity of a block and it is the reason for which tampering a blockchain transaction has an almost null probability to be successful.
 
