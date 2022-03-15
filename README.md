@@ -10,15 +10,42 @@ This repo shows a demo of a *binary* Merkle tree. These are simple, but they are
 **main.py:**
 * a block with 4 transactions is taken as input
 * the merkle tree of the block is computed from the block
-* consistency of the tree is verified
+* integrity of the tree is verified
 * a single transaction is verified
 * the subtree of a single transaction is retrieved
 * a single transaction is verified with a subtree
 * a single transaction is tampered
-* the consistency of the tree is verified again, failing
+* the integrity of the tree is verified again, failing
 
-### Exposed APIs
-ToDo
+**transaction.py:** class for transaction, fields:
+* sender
+* receiver
+* amount
+* hash;
+
+**block.py:** class for block, fields:
+* nonce (dummy)
+* timestamp (dummy)
+* hash of the previous block (dummy)
+* list of transactions;
+* hash of the Merkle root
+
+**node.py:** implementation of the Merkle tree, fields:
+* pointer to right child (null if leaf)
+* pointer to left child (null if leaf)
+* hash (of the transaction if leaf)
+* exposed APIs (look next section) 
+
+### Exposed APIs for Merkle tree:
+* getRightChild(node);
+* getLeftChild(node);
+* isLeaf(node);
+* getHash(node);
+* computeHash(node);
+* verifyIntegrity(rootNode);
+* getRelevantSubTree(transaction);
+* checkTransaction(transaction, rootNode); #it's also ok a root for a subtree.
+* printTree();
 
 ### Attention
 * This is a pedagogical example and not, probably, the most efficient implementation.
