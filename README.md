@@ -45,7 +45,7 @@ This repo shows a demo of a *binary* Merkle tree. These are simple, but they are
 * verifyIntegrity(rootNode);
 * getRelevantSubTree(transaction);
 * checkTransaction(transaction, rootNode); #it's also ok a root for a subtree.
-* printTree();
+* printTree(rootNode);
 
 ### Attention
 * This is a pedagogical example and not, probably, the most efficient implementation.
