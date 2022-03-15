@@ -48,7 +48,7 @@ This repo shows a demo of a *binary* Merkle tree. These are simple, but they are
 * printTree(rootNode);
 
 ### Attention
-* This is a pedagogical example and not, probably, the most efficient implementation.
+* This is not the most efficient implementation. It's a pedagogical, readable, implementation.
 * A real proof-of-work is not computed: here, values `nonce`, `timestamp` and `previous hash` of a block are basically random.
 * A block can contain up to thousands of transaction, but in this example only 4 transactions will be present.
 * Syntax of a transaction of a block (i.e., class `transaction`) does not respect the syntax of a real Eth transaction, it's pedagogical.
