@@ -1,10 +1,5 @@
 # BinaryMerkleTree
-Python3 implementation of a *binary* Merkle trees provided by MelloMM.
-
-MelloMM set of repos targets the technicals of blockchain, especially Ethereum-based blockchains.
-
-## Content
-This repo shows a demo of a *binary* Merkle tree. These are simple, but they are not the trees used in Ethereum, which uses indeed [Merkle Patricia trees](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/). This repo shows a demo of binary trees, whereas the MelloMM's demo of Patricia trees can be found [here (ToDo)]().
+Python3 implementation of a *binary* Merkle tree. This code is pedagogical - this is not the most efficient implementation. This implementation is simple and readable and may help the reader to better understand binary Merkle trees. Note: Ethereum blockchains use a variant of Merkle trees named [Merkle Patricia trees](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/).
 
 ### Structure
 **main.py:**
@@ -86,3 +81,4 @@ The distributed nature of the blockchain allows a node of a blockchain (a peer) 
 2. [Merkling in ethereum](https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
 3. [Blockchain demo](https://andersbrownworth.com/blockchain/blockchain)
 4. [Solidity bootcamp](https://www.youtube.com/watch?v=M576WGiDBdQ)
+5. [Rinkeby Faucet](https://faucets.chain.link/)
